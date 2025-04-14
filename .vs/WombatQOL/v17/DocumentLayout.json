@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WOMBAT\\Dropbox\\PC\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|c:\\users\\wombat\\dropbox\\pc\\documents\\my games\\terraria\\tmodloader\\modsources\\wombatqol\\tiles\\ceremonialcandle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|solutionrelative:tiles\\ceremonialcandle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|c:\\users\\wombat\\dropbox\\pc\\documents\\my games\\terraria\\tmodloader\\modsources\\wombatqol\\localization\\en-us.hjson||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|solutionrelative:localization\\en-us.hjson||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|c:\\users\\wombat\\dropbox\\pc\\documents\\my games\\terraria\\tmodloader\\modsources\\wombatqol\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|solutionrelative:world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|c:\\users\\wombat\\dropbox\\pc\\documents\\my games\\terraria\\tmodloader\\modsources\\wombatqol\\build.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|solutionrelative:build.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "World.cs",
+              "DocumentMoniker": "C:\\Users\\WOMBAT\\Dropbox\\PC\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\World.cs",
+              "RelativeDocumentMoniker": "World.cs",
+              "ToolTip": "C:\\Users\\WOMBAT\\Dropbox\\PC\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\World.cs",
+              "RelativeToolTip": "World.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T00:20:07.508Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "en-US.hjson",
+              "DocumentMoniker": "C:\\Users\\WOMBAT\\Dropbox\\PC\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\Localization\\en-US.hjson",
+              "RelativeDocumentMoniker": "Localization\\en-US.hjson",
+              "ToolTip": "C:\\Users\\WOMBAT\\Dropbox\\PC\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\Localization\\en-US.hjson",
+              "RelativeToolTip": "Localization\\en-US.hjson",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAnwH4AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-25T23:34:56.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CeremonialCandle.cs",
+              "DocumentMoniker": "C:\\Users\\WOMBAT\\Dropbox\\PC\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\Tiles\\CeremonialCandle.cs",
+              "RelativeDocumentMoniker": "Tiles\\CeremonialCandle.cs",
+              "ToolTip": "C:\\Users\\WOMBAT\\Dropbox\\PC\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\Tiles\\CeremonialCandle.cs",
+              "RelativeToolTip": "Tiles\\CeremonialCandle.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAUwC4AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T09:17:19.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "build.txt",
+              "DocumentMoniker": "C:\\Users\\WOMBAT\\Dropbox\\PC\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\build.txt",
+              "RelativeDocumentMoniker": "build.txt",
+              "ToolTip": "C:\\Users\\WOMBAT\\Dropbox\\PC\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\build.txt",
+              "RelativeToolTip": "build.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-09-25T05:15:29.868Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
