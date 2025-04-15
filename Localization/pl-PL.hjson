@@ -1,0 +1,409 @@
+Mods: {
+	WombatQOL: {
+		Items: {
+			concrete: {
+				DisplayName: Betonowa Płyta
+				Tooltip: ""
+			}
+
+			concretewall: {
+				DisplayName: Betonowa Ściana
+				Tooltip: ""
+			}
+
+			IndustrialPipe: {
+				DisplayName: Industrialna Rura
+				Tooltip: ""
+			}
+
+			electriclight: {
+				DisplayName: Żarówka Elektryczna
+				Tooltip: ""
+			}
+
+			electriclightfaulty: {
+				DisplayName: Uszkodzona Żarówka Elektryczna
+				Tooltip: ""
+			}
+
+			ExoticGold: {
+				DisplayName: Egzotyczne Złoto
+				Tooltip: Choć nie różni się zbytnio od zwykłego złota, jego unikalne właściwości nadają mu specjalne zastosowania
+			}
+
+			honeybrick: {
+				DisplayName: Cegła Plastra miodu
+				Tooltip: ""
+			}
+
+			honeybrickwall: {
+				DisplayName: Ściana Plastra miodu
+				Tooltip: ""
+			}
+
+			IndustrialPanel: {
+				DisplayName: Industrialny Panel
+				Tooltip: ""
+			}
+
+			IndustrialPlatform: {
+				DisplayName: Industrialna Platforma
+				Tooltip: ""
+			}
+
+			IndustrialWall: {
+				DisplayName: Industrialna Ściana
+				Tooltip: ""
+			}
+
+			CeremonialCandle: {
+				DisplayName: Ceremonialna Świeca
+				Tooltip: Bezkształtne świece które stopiły się w wyniku użytkowania
+			}
+
+			IndustrialSupport: {
+				DisplayName: Industrialne Wzmocnienie
+				Tooltip: ""
+			}
+
+			DukeFishronArtifact: {
+				DisplayName: Artefakt Księcia Ryboka
+				Tooltip: Zawiera niewielki fragment mocy Księcia Ryboka
+			}
+
+			GolemArtifact: {
+				DisplayName: Artefakt Golema
+				Tooltip: Zawiera niewielki fragment mocy Golema
+			}
+
+			KingSlimeArtifact: {
+				DisplayName: Artefakt Króla Szlamaów
+				Tooltip: Zawiera niewielki fragment mocy Króla Szlamaów
+			}
+
+			MoonLordArtifact: {
+				DisplayName: Artefakt Księżycowego Władcy
+				Tooltip: Zawiera niewielki fragment mocy Księżycowego Władcy
+			}
+
+			PlanteraArtifact: {
+				DisplayName: Artefakt Plantery
+				Tooltip: Zawiera niewielki fragment mocy Plantery
+			}
+
+			QueenBeeArtifact: {
+				DisplayName: Artefakt Królowej Pszczół
+				Tooltip: Zawiera niewielki fragment mocy Królowej Pszczół
+			}
+
+			SkeletronArtifact: {
+				DisplayName: Artefakt Szkieletrona
+				Tooltip: Zawiera niewielki fragment mocy Szkieletrona
+			}
+
+			WallOfFleshArtifact: {
+				DisplayName: Artefakt Ściany Mięcha
+				Tooltip: Zawiera niewielki fragment mocy Ściany Mięcha
+			}
+
+			IndustrialDoor: {
+				DisplayName: Industrialne Drzwi
+				Tooltip: ""
+			}
+		}
+
+		Projectiles: {
+			deathlaser.DisplayName: laser śmierci
+			eyelaser.DisplayName: laser z oka
+			greenlaser.DisplayName: zielony laser
+			martianlaser.DisplayName: marsjański laser
+			muzzleflash.DisplayName: błysk wystrzału
+			nebulalaser.DisplayName: laser mgławicy
+			pinklaser.DisplayName: różowy laser
+		}
+
+		Tiles: {
+			electriclight.MapEntry: Żarówka Elektryczna
+			electriclightfaulty.MapEntry: Żarówka Elektryczna
+		}
+
+		Configs: {
+			Client: {
+				DisplayName: Ustawienia Klienta
+				Headers: {
+					Worldgen: Generator Świata
+					Visuals: Efekty Wizualne
+					Lighting: Oświetlenie
+				}
+
+				LeafBushes: {
+					Label: "[i:745] Liściaste Krzewy"
+					Tooltip: Będą się generować ściany liści na adekwatnych blokach trawy, dodając więcej życia i głębi środowisku
+				}
+
+				WaterClay: {
+					Label: "[i:133] Zawodniona Glina"
+					Tooltip:
+						'''
+						Glina będzie generować się pod zbiornikami wodnymi, a nie w przypadkowych żyłach, co zapewni im unikalne miejsce do znalezienia
+
+						Uwaga: Tarło roślin wodnych jest uniemożliwione, co w dużym stopniu zależy od osobistych preferencji
+						Uwaga: Nic nie robi przy włączonej modyfikacji "Remnants", ponieważ ta funkcja działa słabo z tym modem
+						'''
+				}
+
+				DungeonChains: {
+					Label: "[i:85] Łańcuchy w Lochu"
+					Tooltip:
+						'''
+						Wiszące łańcuchy będą generować się w wysokich miejscach w The Dungeon, dzięki czemu przemierzanie będzie ciekawsze
+
+						Uwaga: Nic nie robi przy włączonej modyfikacji "Remnants", ponieważ już posiada tą funkcję
+						'''
+				}
+
+				DungeonStairs: {
+					Label: "[i:1384] Schody w Lochu"
+					Tooltip:
+						'''
+						W stosownych przypadkach w Lochu będą generowane nachylone platformy, nadając mu bardziej spójny wygląd
+						Uwaga: Nic nie robi przy włączonej modyfikacji "Remnants", ponieważ już posiada tą funkcję
+						'''
+				}
+
+				TempleStairs: {
+					Label: "[i:3906] Schody w Świątyni"
+					Tooltip:
+						'''
+						W stosownych przypadkach w Świątyni będą generowane nachylone platformy, nadając mu bardziej spójny wygląd
+
+						Uwaga: Nic nie robi przy włączonej modyfikacji "Remnants", ponieważ już posiada tą funkcję
+						'''
+				}
+
+				BulletFlashes: {
+					Label: "[i:164] Błyski Palne"
+					Tooltip:
+						'''
+						Pociski broni palnej zyskują efekt wystrzału, dzięki czemu są bardziej atrakcyjne wizualnie
+
+						Uwaga: Nic nie robi przy włączonej modyfikacji "Terraria Overhaul", ponieważ już posiada tą funkcję
+						'''
+				}
+
+				LaserFlashes: {
+					Label: "[i:127] Błyski Laserów"
+					Tooltip: Pociski laserowe zyskują efekt wystrzału, dzięki czemu są bardziej atrakcyjne wizualnie
+				}
+
+				BulletCasings: {
+					Label: "[i:1432] Łuski Pocisków"
+					Tooltip:
+						'''
+						Broń będzie wyrzucać łuski po wystrzale, dodając więcej immersji w walce dystansowej
+
+						Uwaga: Nic nie robi przy włączonej modyfikacji "Terraria Overhaul", ponieważ już posiada tą funkcję
+						'''
+				}
+
+				JungleFireflies: {
+					Label: "[i:1992] Świetliki z Dżungli"
+					Tooltip: Małe świetliki będą przemierzać podziemną Dżunglę, ożywiając atmosferę
+				}
+
+				HallowFireflies: {
+					Label: "[i:2004] Świetliki z Bajkowa"
+					Tooltip: Małe świetliki będą przemierzać podziemne Bajkowo, ożywiając atmosferę
+				}
+
+				VileWater: {
+					Label: "[i:3210] Paskudna Woda"
+					Tooltip: Woda z Zepsucia staje się chorobliwie zielona, ​​dodając różnorodności kolorów i zmniejszając monotonię
+				}
+
+				Screenshake: {
+					Label: "[i:2701] Drganie Ekranu"
+					Tooltip:
+						'''
+						Eksplozje powodują drgania ekranu, których intensywność zależy od odległości i przybliżonej siły
+
+						Uwaga: Nie dotyczy zmodyfikowanej zawartości, co powoduje niespójności z zawartością podstawową
+						'''
+				}
+
+				SnowDirtMerge: {
+					Label: "[i:593] Połączenie Sniegu i Ziemi"
+					Tooltip: Włącza nieużywane tekstury scalania bloków ziemi i śniegu
+				}
+
+				GlowingHellstone: {
+					Label: "[i:174] Ciepły Piekielny Kamień"
+					Tooltip: Piekielny Kamień, jego cegły i naturalne ściany z lawy będą miały delikatny czerwony blask
+				}
+
+				GlowingLavaBG: {
+					Label: "[i:4535] Ciepłe Tło Lawy"
+					Tooltip:
+						'''
+						Tło lawy w pobliżu podziemi (zakładając, że tła są włączone) będzie miało delikatny czerwony blask
+
+						Uwaga: Wpływa na Pod-światy, co w niektórych przypadkach może wyglądać źle
+						'''
+				}
+
+				HellCages: {
+					Label: "[i:147] Piekielne Klatki"
+					Tooltip: W podziemiach pojawią się kolczaste wiszące klatki, dzięki którym przemierzanie będzie ciekawsze
+				}
+
+				DesertRocks: {
+					Label: "[i:3273] Filary Pustynne"
+					Tooltip: Na głównej Pustyni pojawią się filary z piaskowca, dzięki którym przemierzanie będzie ciekawsze
+				}
+
+				GraniteEnemyGlow: {
+					Label: "[i:3086] Granitowa Energia"
+					Tooltip: Granitowi wrogowie będą emitować światło
+				}
+
+				SpawnCampsite: {
+					Label: "[i:2434] Namiot w miejscu odrodzenia"
+					Tooltip: W miejscu odrodzenia będzie mały namiot dla Przewodnika
+				}
+
+				LushJungle: {
+					Label: "[i:746] Bujna Dżungla"
+					Tooltip:
+						'''
+						Trawa z dżungli zastąpi całe odsłonięte błoto w Dżungli na powierzchni, dodając więcej życia do środowiska
+
+						Uwaga: Nic nie robi przy włączonej modyfikacji "Remnants", ponieważ już posiada tą funkcję
+						'''
+				}
+
+				ChestItemShuffle: {
+					Label: "[i:48] Pomieszane Kufry"
+					Tooltip: Naturalnie wygenerowane kufry będą miały przetasowaną zawartość, aby uzyskać bardziej naturalny i opuszczony charakter
+				}
+
+				RandomOpenDoors: {
+					Label: "[i:25] Opuszczone Drzwi"
+					Tooltip: Naturalnie wygenerowane drzwi będą czasami pozostawiane otwarte, aby uzyskać bardziej naturalny i opuszczony charakter
+				}
+			}
+
+			Server: {
+				DisplayName: Ustawienia Serwera
+
+				Headers: {
+					Content: Zawartość
+					Gameplay: Rozgrywka
+					Crafting: Wytwarzanie
+					Drops: Dropy
+				}
+
+				BossArtifacts: {
+					Label: Artefakty Bossów
+					Tooltip:
+						'''
+						W trybie eksperckim lub wyższym bossowie będą upuszczać artefakty, z których można wytworzyć ich dropy. Pomaga wyeliminować powtarzające się grindowanie w przypadku konkretnego bossa
+						Każdy gracz otrzymuje jeden artefakt, a ilość potrzebna na dany przedmiot jest mianownikiem szansy na wypadnięcie tego przedmiotu
+
+						Uwaga: Bardzo polecane
+						'''
+				}
+
+				SafeCritters: {
+					Label: "[i:2019] Bezpieczne Stworzonka"
+					Tooltip: Stworzonka nie bedą otrzymywać obrażeń od potworów
+				}
+
+				SafeBoundNPCs: {
+					Label: "[i:985] Bezpieczni Związani NPC"
+					Tooltip: Związani NPC i Nieprzytomny nie otrzymają obrażeń od potworów, co zmniejsza presję związaną z próbą ich ratowania
+				}
+
+				TilePickup: {
+					Label: "[i:5] Lepsze Zbieractwo"
+					Tooltip:
+						'''
+						Większość roślin i przedmiotów można łatwo zebrać, klikając prawym przyciskiem myszy, co czyni zbieranie nieco wygodniejszym
+						Zbieranie roślin do alchemii w ten sposób zresetuje ich wzrost, zamiast je niszczyć
+
+						Uwaga: Nie działa w trybie wieloosobowym
+						'''
+				}
+
+				DyeMixing: {
+					Label: "[i:1066] Mieszanie Kolorów"
+					Tooltip: Farby i barwniki o różnych kolorach można mieszać w kadzi do barwników, aby stworzyć nowe
+				}
+
+				EasyWings: {
+					Label: "[i:785] Pierzaste Skrzydła"
+					Tooltip: Usunięto Pióro gigantycznej harpii, a przepis na Skrzydła harpii wykorzystuje zamiast tego 50 normalnych piór
+				}
+
+				SpectrePaintUpgrade: {
+					Label: "[i:1543] Spectre Infusion"
+					Tooltip:
+						'''
+						Widmowe narzędzia do malowania są ulepszane bezpośrednio w stosunku do ich normalnych odpowiedników, co rekompensuje zmniejszonym kosztem Widmowych sztabek
+						Ma to na celu dodanie progresji, i jednocześnie poprawienie wytwarzania i zarządzania ekwipunkiem
+						'''
+				}
+
+				GlowingMushrooms: {
+					Label: "[i:183] Więcej Grzybów"
+					Tooltip:
+						'''
+						Wrogowie z Lśniacych grzybów upuszczą część swoich grzybów po zabiciu, dzięki czemu grindowanie w celu zdobycia Grzybielnicowej zbroi będzie nieco mniej nudne
+
+						Uwaga: Bardzo polecane
+						'''
+				}
+
+				SoulsOfFlight: {
+					Label: "[i:575] Duchowe Harpie"
+					Tooltip: Harpie mogą upuścić Duszę lotu, gdy zostaną zabite w trybie Hardmode dzięki czemu grindowanie w celu zdobycia skrzydeł będzie nieco mniej nudne
+				}
+
+				KingSlimeKatana: {
+					Label: "[i:2273] Katana Ninjy"
+					Tooltip: Po pokonaniu Król Szlamów upuści Katanę, co daje większą motywację do walki z nim we wczesnej fazie gry
+				}
+
+				ExoticGold: {
+					Label: Egzotyczne Złoto
+					Tooltip:
+						'''
+						Egzotyczne złoto to nowy przedmiot który:
+						- Zastępuje Złoty pył w wytwarzaniu przedmiotów
+						- Wypada z piratów zamiast złotych mebli
+						- Służy do wytwarzania złotych mebli
+						Ma to na celu ładne powiązanie podobnych sobie przedmiotów przy jednoczesnym zmniejszeniu bałaganu w ekwipunku
+
+						Uwaga: Bardzo polecane
+						'''
+				}
+
+				HoneyDispenser: {
+					Label: "[i:2204] Obfity Miód"
+					Tooltip: Dozownik miodu będzie faktycznie liczony jako źródło miodu
+				}
+			}
+		}
+
+		Biomes: {
+			CorruptionWater: {
+				DisplayName: Woda z Zepsucia
+				TownNPCDialogueName: Woda z Zepsucia
+			}
+
+			Shimmer: {
+				DisplayName: Blask
+				TownNPCDialogueName: Blask
+			}
+		}
+	}
+}
