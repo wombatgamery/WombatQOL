@@ -1,6 +1,6 @@
-[url=https://discord.gg/cbK6rVC][b]Заходите в наш дискорд сервер, если у вас остались какие-либо вопросы по моду[/b][/url]
-[url=https://ko-fi.com/wombatgamery][b]Поддержать разработчика копейкой можно на его странице Ko-fi[/b][/url]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3308342945][b]Рекомендуем заодно заценить и другой мод от нас — Challenge Vaults![/b][/url]
+[url=https://discord.gg/cbK6rVC][img]https://imgur.com/RF3SON0.png[/img][/url]
+[url=https://ko-fi.com/wombatgamery][img]https://imgur.com/HMNxjJ6.png[/img][/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3308342945][img]https://imgur.com/iKwGXQN.png[/img][/url]
 
 [h2]Описание[/h2] [img]https://i.imgur.com/jdunrUl.png[/img]
 Этот мод — набор маленьких, простеньких изменений геймплея, генерации мира, рецептов предметов, визуала и прочих аспектов Террарии, что так или иначе улучшат ваш опыт от игры не ломая при этом баланс или прогрессию. Мод отлично впишется в любую сборку для ваших прохождений. Каждую фичу можно включать и выключать по своему желанию в конфиге, не стесняйтесь настраивать этот мод под себя и свои предпочтения!
@@ -10,6 +10,6 @@
 
 [h2]Благодарности[/h2] [img]https://i.imgur.com/jdunrUl.png[/img]
 тдаём должное следующим пользователям, как-либо оказавшим поддержку в разработке этого проекта: [list]
-[*][url=https://steamcommunity.com/id/xenofite][b]Xenofite[/b][/url] за создание русской локализации мода и её поддержку постоянными обновлениями.
-[*][https://steamcommunity.com/id/nichiimishiari][b]Nichii[/b][/url] за создание польской локализации мода и её поддержку постоянными обновлениями.
+[*][url=https://steamcommunity.com/id/xenofite][b]Xenofite[/b][/url] за создание русской локализации мода
+[*][https://steamcommunity.com/id/nichiimishiari][b]Nichii[/b][/url] за создание польской локализации мода
 [/list]
