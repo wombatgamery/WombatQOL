@@ -43,7 +43,7 @@ namespace WombatQOL
 		{
 			Recipe recipe;
 
-			if (ModContent.GetInstance<Server>().DyeMixing)
+			if (ModContent.GetInstance<Gameplay>().DyeMixing)
 			{
                 #region dye
                 DyeCombine(ItemID.YellowDye, ItemID.RedDye, ItemID.GreenDye); // primary and secondary colours
@@ -86,7 +86,7 @@ namespace WombatQOL
                 #endregion
             }
 
-            if (ModContent.GetInstance<Server>().EasyWings)
+            if (ModContent.GetInstance<Gameplay>().EasyWings)
             {
 				DisableRecipes(ItemID.HarpyWings);
 				recipe = Recipe.Create(ItemID.HarpyWings);
@@ -110,7 +110,7 @@ namespace WombatQOL
 				//recipe.Register();
 			}
 
-			if (ModContent.GetInstance<Server>().SpectrePaintUpgrade)
+			if (ModContent.GetInstance<Gameplay>().SpectrePaintUpgrade)
 			{
 				DisableRecipes(ItemID.SpectrePaintbrush);
 				DisableRecipes(ItemID.SpectrePaintRoller);

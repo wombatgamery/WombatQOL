@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\womba\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|c:\\users\\womba\\documents\\my games\\terraria\\tmodloader\\modsources\\wombatqol\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|solutionrelative:config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|c:\\users\\womba\\documents\\my games\\terraria\\tmodloader\\modsources\\wombatqol\\npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|solutionrelative:npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|c:\\users\\womba\\documents\\my games\\terraria\\tmodloader\\modsources\\wombatqol\\projectiles\\muzzleflash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|solutionrelative:projectiles\\muzzleflash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|c:\\users\\womba\\documents\\my games\\terraria\\tmodloader\\modsources\\wombatqol\\description_workshop.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|solutionrelative:description_workshop.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|c:\\users\\womba\\documents\\my games\\terraria\\tmodloader\\modsources\\wombatqol\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|solutionrelative:projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|c:\\users\\womba\\documents\\my games\\terraria\\tmodloader\\modsources\\wombatqol\\projectiles\\muzzleflash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|solutionrelative:projectiles\\muzzleflash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|c:\\users\\womba\\documents\\my games\\terraria\\tmodloader\\modsources\\wombatqol\\localization\\ru-ru.hjson||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -33,6 +25,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|c:\\users\\womba\\documents\\my games\\terraria\\tmodloader\\modsources\\wombatqol\\localization\\pl-pl.hjson||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|solutionrelative:localization\\pl-pl.hjson||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|c:\\users\\womba\\documents\\my games\\terraria\\tmodloader\\modsources\\wombatqol\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|solutionrelative:config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|c:\\users\\womba\\documents\\my games\\terraria\\tmodloader\\modsources\\wombatqol\\npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|solutionrelative:npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{870610F6-840E-4BDD-A137-2E2855B63CBD}|WombatQOL.csproj|c:\\users\\womba\\documents\\my games\\terraria\\tmodloader\\modsources\\wombatqol\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -75,11 +75,12 @@
               "ViewState": "AgIAAFgAAAAAAAAAAAAgwGUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-15T00:20:07.508Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "description_workshop.txt",
               "DocumentMoniker": "C:\\Users\\womba\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\description_workshop.txt",
               "RelativeDocumentMoniker": "description_workshop.txt",
@@ -105,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "ru-RU.hjson",
               "DocumentMoniker": "C:\\Users\\womba\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\Localization\\ru-RU.hjson",
               "RelativeDocumentMoniker": "Localization\\ru-RU.hjson",
@@ -113,11 +114,12 @@
               "RelativeToolTip": "Localization\\ru-RU.hjson",
               "ViewState": "AgIAAMkAAAAAAAAAAAAQwOUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-15T12:45:51.112Z"
+              "WhenOpened": "2025-04-15T12:45:51.112Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "NPC.cs",
               "DocumentMoniker": "C:\\Users\\womba\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\NPC.cs",
               "RelativeDocumentMoniker": "NPC.cs",
@@ -130,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Projectile.cs",
               "DocumentMoniker": "C:\\Users\\womba\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\Projectile.cs",
               "RelativeDocumentMoniker": "Projectile.cs",
@@ -138,7 +140,8 @@
               "RelativeToolTip": "Projectile.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAgwGQAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T12:04:12.513Z"
+              "WhenOpened": "2025-04-15T12:04:12.513Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -150,7 +153,8 @@
               "RelativeToolTip": "Tile.cs",
               "ViewState": "AgIAAJ0AAAAAAAAAAAAmwM8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T12:03:24.135Z"
+              "WhenOpened": "2025-04-15T12:03:24.135Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -162,24 +166,25 @@
               "RelativeToolTip": "WombatQOL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T12:02:42.725Z"
+              "WhenOpened": "2025-04-15T12:02:42.725Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Config.cs",
               "DocumentMoniker": "C:\\Users\\womba\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\Config.cs",
               "RelativeDocumentMoniker": "Config.cs",
               "ToolTip": "C:\\Users\\womba\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\Config.cs",
               "RelativeToolTip": "Config.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAAAI8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAAAIoAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T01:17:07.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "pl-PL.hjson",
               "DocumentMoniker": "C:\\Users\\womba\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\Localization\\pl-PL.hjson",
               "RelativeDocumentMoniker": "Localization\\pl-PL.hjson",
@@ -187,11 +192,12 @@
               "RelativeToolTip": "Localization\\pl-PL.hjson",
               "ViewState": "AgIAAGgAAAAAAAAAAAAQwIsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-15T01:01:22.893Z"
+              "WhenOpened": "2025-04-15T01:01:22.893Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "en-US.hjson",
               "DocumentMoniker": "C:\\Users\\womba\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WombatQOL\\Localization\\en-US.hjson",
               "RelativeDocumentMoniker": "Localization\\en-US.hjson",
@@ -199,7 +205,8 @@
               "RelativeToolTip": "Localization\\en-US.hjson",
               "ViewState": "AgIAAM8AAAAAAAAAAAAQwOoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-09-25T23:34:56.213Z"
+              "WhenOpened": "2024-09-25T23:34:56.213Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -223,7 +230,8 @@
               "RelativeToolTip": "build.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-09-25T05:15:29.868Z"
+              "WhenOpened": "2024-09-25T05:15:29.868Z",
+              "EditorCaption": ""
             }
           ]
         }

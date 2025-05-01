@@ -12,7 +12,7 @@ namespace WombatQOL
 
         private int On_Main_CalculateWaterStyle(On_Main.orig_CalculateWaterStyle orig, bool ignoreFountains)
         {
-            if (Main.bgStyle == 1 && ModContent.GetInstance<Client>().VileWater)
+            if (Main.bgStyle == 1 && ModContent.GetInstance<Visuals>().VileWater)
             {
                 return ModContent.Find<ModWaterStyle>("WombatQOL/VileWater").Slot;
             }

@@ -4,11 +4,11 @@ using System.ComponentModel;
 
 namespace WombatQOL
 {
-	public class Client : ModConfig
+	public class Worldgen : ModConfig
 	{
-		public override ConfigScope Mode => ConfigScope.ClientSide;
+		public override ConfigScope Mode => ConfigScope.ServerSide;
 
-		[Header("Worldgen")]
+		[Header("Terrain")]
 
 		[DefaultValue(true)]
 		public bool LeafBushes;
@@ -33,8 +33,7 @@ namespace WombatQOL
         [BackgroundColor(100, 100, 150)]
         public bool LushJungle;
 
-		[DefaultValue(true)]
-		public bool ChestItemShuffle;
+        [Header("Structure")]
 
 		[DefaultValue(true)]
 		public bool HellCages;
@@ -65,66 +64,15 @@ namespace WombatQOL
         public bool TempleStairs;
 
         [DefaultValue(true)]
+        public bool ChestItemShuffle;
+
+        [DefaultValue(true)]
         public bool RandomOpenDoors;
 
         [DefaultValue(true)]
         public bool SpawnCampsite;
-
-        [Header("Visuals")]
-
-		//[Label("Muzzle Flashes (Bullets)")]
-		[DefaultValue(true)]
-		//[Tooltip("Bullet-type projectiles gain a firing effect to make them more visually appealing.\nThis config will have no effect with Terraria Overhaul enabled, as it already includes this feature.")]
-		public bool BulletFlashes;
-		//[Label("Muzzle Flashes (Lasers)")]
-		[DefaultValue(true)]
-		//[Tooltip("Laser-type projectiles gain a firing effect to make them more visually appealing.")]
-		public bool LaserFlashes;
-
-		[DefaultValue(true)]
-		public bool JungleFireflies;
-
-		[DefaultValue(true)]
-		public bool HallowFireflies;
-
-		//[Label("Bullet Casings")]
-		[DefaultValue(true)]
-        //[Tooltip("Guns will eject bullet casings when fired, adding some immersion to ranged combat.\nThis config will have no effect with Terraria Overhaul enabled, as it already includes this feature.")]
-        [BackgroundColor(100, 100, 150)]
-        public bool BulletCasings;
-
-		[DefaultValue(true)]
-		public bool VileWater;
-
-		//[Label("Explosion Screenshake")]
-		[DefaultValue(true)]
-		//[Tooltip("Explosions will cause screenshake, the intensity generally depends on the explosive power. \nDOESN'T APPLY TO ANY MODDED CONTENT.")]
-		[BackgroundColor(150, 150, 125)]
-		public bool Screenshake;
-
-		//[Label("Snow and Dirt Merge")]
-		[DefaultValue(true)]
-        //[Tooltip("Enables the unused dirt merge textures for snow blocks.")]
-        [ReloadRequired]
-        public bool SnowDirtMerge;
-
-		[Header("Lighting")]
-
-		//[Label("Hellstone Glow")]
-		[DefaultValue(true)]
-		//[Tooltip("Hellstone, its bricks and natural lava walls will have a red glow.\nThis config will have no effect with Remnants Mod enabled, as it already includes this feature.")]
-		public bool GlowingHellstone;
-
-		//[Label("Ambient Light In Lava Layer")]
-		[DefaultValue(true)]
-		//[Tooltip("The lava background near the underworld (assuming backgrounds are on) will have a red ambient light. \nAFFECTS SUBWORLDS, WHICH MAY BE UNWANTED.")]
-		[BackgroundColor(150, 150, 125)]
-		public bool GlowingLavaBG;
-
-		[DefaultValue(true)]
-		public bool GraniteEnemyGlow;
 	}
-	public class Server : ModConfig
+	public class Gameplay : ModConfig
 	{
 		public override ConfigScope Mode => ConfigScope.ServerSide;
 
@@ -140,7 +88,7 @@ namespace WombatQOL
         [ReloadRequired]
         public bool ExoticGold;
 
-		[Header("Gameplay")]
+		[Header("Functional")]
 
 		[DefaultValue(true)]
 		public bool SafeCritters;
@@ -149,7 +97,7 @@ namespace WombatQOL
 		public bool SafeBoundNPCs;
 
 		[DefaultValue(true)]
-        [BackgroundColor(150, 150, 125)]
+        [ReloadRequired]
         public bool TilePickup;
 
 		[Header("Crafting")]
@@ -184,5 +132,60 @@ namespace WombatQOL
 		[DefaultValue(true)]
         [ReloadRequired]
         public bool KingSlimeKatana;
-	}
+    }
+
+    public class Visuals : ModConfig
+    {
+        public override ConfigScope Mode => ConfigScope.ClientSide;
+
+        [Header("Effects")]
+
+        [DefaultValue(true)]
+        [BackgroundColor(100, 100, 150)]
+        public bool BulletFlashes;
+
+        [DefaultValue(true)]
+        public bool LaserFlashes;
+
+        [DefaultValue(true)]
+        [BackgroundColor(100, 100, 150)]
+        public bool BulletCasings;
+
+        [DefaultValue(true)]
+        public bool JungleFireflies;
+
+        [DefaultValue(true)]
+        public bool HallowFireflies;
+
+        [DefaultValue(true)]
+        public bool VileWater;
+
+        //[Label("Explosion Screenshake")]
+        [DefaultValue(true)]
+        //[Tooltip("Explosions will cause screenshake, the intensity generally depends on the explosive power. \nDOESN'T APPLY TO ANY MODDED CONTENT.")]
+        [BackgroundColor(150, 150, 125)]
+        public bool Screenshake;
+
+        //[Label("Snow and Dirt Merge")]
+        [DefaultValue(true)]
+        //[Tooltip("Enables the unused dirt merge textures for snow blocks.")]
+        [ReloadRequired]
+        public bool SnowDirtMerge;
+
+        [Header("Lighting")]
+
+        //[Label("Hellstone Glow")]
+        [DefaultValue(true)]
+        //[Tooltip("Hellstone, its bricks and natural lava walls will have a red glow.\nThis config will have no effect with Remnants Mod enabled, as it already includes this feature.")]
+        public bool GlowingHellstone;
+
+        //[Label("Ambient Light In Lava Layer")]
+        [DefaultValue(true)]
+        //[Tooltip("The lava background near the underworld (assuming backgrounds are on) will have a red ambient light. \nAFFECTS SUBWORLDS, WHICH MAY BE UNWANTED.")]
+        [BackgroundColor(150, 150, 125)]
+        public bool GlowingLavaBG;
+
+        [DefaultValue(true)]
+        public bool GraniteEnemyGlow;
+    }
 }

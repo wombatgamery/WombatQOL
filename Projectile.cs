@@ -15,7 +15,7 @@ namespace WombatQOL
 	{
         public override void OnSpawn(Projectile projectile, IEntitySource source)
         {
-            if (ModContent.GetInstance<Client>().LaserFlashes)
+            if (ModContent.GetInstance<Visuals>().LaserFlashes)
             {
                 int type = -1;
 
@@ -35,7 +35,7 @@ namespace WombatQOL
                 {
                     type = ModContent.ProjectileType<deathlaser>();
                 }
-                else if (projectile.type == ProjectileID.LaserMachinegunLaser || projectile.type == ProjectileID.ZapinatorLaser)
+                else if (projectile.type == ProjectileID.LaserMachinegunLaser || projectile.type == ProjectileID.ZapinatorLaser || projectile.type == ProjectileID.MartianWalkerLaser)
                 {
                     type = ModContent.ProjectileType<martianlaser>();
                 }
@@ -43,16 +43,21 @@ namespace WombatQOL
                 {
                     type = ModContent.ProjectileType<nebulalaser>();
                 }
+                else if (projectile.type == ProjectileID.EyeBeam || projectile.type == ProjectileID.SaucerLaser)
+                {
+                    type = ModContent.ProjectileType<yellowlaser>();
+                }
 
                 if (type != -1)
                 {
-                    int distance = 8;
+                    int distance = 8 - projectile.height / 2;
 
                     if (projectile.owner != -1)
                     {
                         distance = Main.player[projectile.owner].HeldItem.width - 8;
                     }
-                    int projIndex = Projectile.NewProjectile(projectile.GetSource_FromAI(), projectile.Center + Vector2.Normalize(projectile.velocity) * distance, projectile.velocity * projectile.extraUpdates / 2, type, 0, 0);
+                    int projIndex = Projectile.NewProjectile(projectile.GetSource_FromAI(), projectile.Center + Vector2.Normalize(projectile.velocity) * distance, projectile.velocity * projectile.extraUpdates / 3, type, 0, 0);
+                    Main.projectile[projIndex].ignoreWater = projectile.ignoreWater;
                 }
             }
 
@@ -78,14 +83,14 @@ namespace WombatQOL
 
                 if (bullets.Contains(projectile.type) || projectile.type >= ProjectileID.Count && projectile.aiStyle == 1 && projectile.DamageType == DamageClass.Ranged)
                 {
-                    if (ModContent.GetInstance<Client>().BulletCasings)
+                    if (ModContent.GetInstance<Visuals>().BulletCasings)
                     {
                         int goreIndex = Gore.NewGore(projectile.GetSource_FromAI(), projectile.Center, -Vector2.Normalize(projectile.velocity) * 2, ModContent.GoreType<bulletcasing>(), 1);
                         Main.gore[goreIndex].rotation = projectile.velocity.ToRotation() + MathHelper.PiOver2;
                     }
-                    if (ModContent.GetInstance<Client>().BulletFlashes)
+                    if (ModContent.GetInstance<Visuals>().BulletFlashes)
                     {
-                        int distance = 16;
+                        int distance = 8;
 
                         if (projectile.owner != -1)
                         {
@@ -93,6 +98,7 @@ namespace WombatQOL
                         }
                         int projIndex = Projectile.NewProjectile(projectile.GetSource_FromAI(), projectile.Center + Vector2.Normalize(projectile.velocity) * distance, projectile.velocity * projectile.extraUpdates / 2, ModContent.ProjectileType<muzzleflash>(), 0, 0);
                         Main.projectile[projIndex].rotation = projectile.velocity.ToRotation();
+                        Main.projectile[projIndex].ignoreWater = projectile.ignoreWater;
                     }
                 }
             }
@@ -100,7 +106,7 @@ namespace WombatQOL
 
         public override void Kill(Projectile projectile, int timeLeft)
         {
-            if (ModContent.GetInstance<Client>().Screenshake)
+            if (ModContent.GetInstance<Visuals>().Screenshake)
             {
                 if (projectile.type == ProjectileID.Grenade || projectile.type == ProjectileID.StickyGrenade || projectile.type == ProjectileID.BouncyGrenade || projectile.type == ProjectileID.Beenade || projectile.type == ProjectileID.ExplosiveBullet)
                 {

@@ -15,12 +15,7 @@ namespace WombatQOL
 	{
         public override void SetStaticDefaults()
         {
-            if (ModContent.GetInstance<Server>().HoneyDispenser)
-            {
-                TileID.Sets.CountsAsHoneySource[TileID.HoneyDispenser] = true;
-            }
-
-            if (ModContent.GetInstance<Client>().SnowDirtMerge)
+            if (ModContent.GetInstance<Visuals>().SnowDirtMerge)
             {
                 Main.tileMergeDirt[TileID.SnowBlock] = true;
                 TileMerge(TileID.SnowBlock, TileID.IceBlock);
@@ -28,6 +23,29 @@ namespace WombatQOL
                 TileMerge(TileID.SnowBlock, TileID.CorruptIce);
                 TileMerge(TileID.SnowBlock, TileID.FleshIce);
                 TileMerge(TileID.SnowBlock, TileID.HallowedIce);
+            }
+
+            if (ModContent.GetInstance<Gameplay>().HoneyDispenser)
+            {
+                TileID.Sets.CountsAsHoneySource[TileID.HoneyDispenser] = true;
+            }
+
+            if (ModContent.GetInstance<Gameplay>().TilePickup)
+            {
+                TileID.Sets.CanDropFromRightClick[TileID.BloomingHerbs] = true;
+                TileID.Sets.CanDropFromRightClick[TileID.MatureHerbs] = true;
+
+                TileID.Sets.CanDropFromRightClick[TileID.DyePlants] = true;
+                TileID.Sets.CanDropFromRightClick[TileID.Sunflower] = true;
+                TileID.Sets.CanDropFromRightClick[TileID.Plants] = true;
+                TileID.Sets.CanDropFromRightClick[TileID.HallowedPlants] = true;
+                TileID.Sets.CanDropFromRightClick[TileID.CorruptPlants] = true;
+                TileID.Sets.CanDropFromRightClick[TileID.JunglePlants] = true;
+                TileID.Sets.CanDropFromRightClick[TileID.CrimsonPlants] = true;
+
+                TileID.Sets.CanDropFromRightClick[TileID.Books] = true;
+                TileID.Sets.CanDropFromRightClick[TileID.BeachPiles] = true;
+
             }
         }
 
@@ -41,7 +59,7 @@ namespace WombatQOL
         {
             Tile tile = Main.tile[i, j];
 
-            if (tile.HasTile && ModContent.GetInstance<Server>().TilePickup && Main.netMode == NetmodeID.SinglePlayer)
+            if (tile.HasTile && ModContent.GetInstance<Gameplay>().TilePickup && Main.netMode == NetmodeID.SinglePlayer)
             {
                 Player player = Main.LocalPlayer;
 
@@ -128,10 +146,7 @@ namespace WombatQOL
                     {
                         player.cursorItemIconID = ItemID.StrangePlant4;
                     }
-                    else
-                    {
-                        player.cursorItemIconID = ItemID.PinkPricklyPear;
-                    }
+                    else player.cursorItemIconID = ItemID.PinkPricklyPear;
                 }
                 else if (tile.TileType == TileID.JunglePlants && tile.TileFrameX == 18 * 8)
                 {
@@ -163,48 +178,34 @@ namespace WombatQOL
                     player.cursorItemIconEnabled = true;
                     player.cursorItemIconID = ItemID.Book;
                 }
-            }
-        }
-        public override void RightClick(int i, int j, int type)
-        {
-            Player player = Main.LocalPlayer;
-            Tile tile = Main.tile[i, j];
+                else if (tile.TileType == TileID.BeachPiles)
+                {
+                    player.cursorItemIconEnabled = true;
 
-            if (tile.HasTile && ModContent.GetInstance<Server>().TilePickup && Main.netMode == NetmodeID.SinglePlayer)
-            {
-                if (type == TileID.BloomingHerbs || type == TileID.MatureHerbs)
-                {
-                    short frameX = tile.TileFrameX;
-                    WorldGen.KillTile(i, j);
-                    WorldGen.PlaceTile(i, j, TileID.ImmatureHerbs, true, style: frameX / 18);
-                }
-                else if (tile.TileType == TileID.DyePlants || tile.TileType == TileID.Sunflower)
-                {
-                    WorldGen.KillTile(i, j);
-                }
-                else if ((tile.TileType == TileID.Plants || tile.TileType == TileID.HallowedPlants || tile.TileType == TileID.CorruptPlants || tile.TileType == TileID.JunglePlants) && tile.TileFrameX == 18 * 8)
-                {
-                    WorldGen.KillTile(i, j);
-                }
-                else if (tile.TileType == TileID.CrimsonPlants && tile.TileFrameX == 18 * 15)
-                {
-                    WorldGen.KillTile(i, j);
-                }
-                else if (tile.TileType == TileID.Books && tile.TileFrameX != 18 * 5)
-                {
-                    WorldGen.KillTile(i, j);
-                }
-
-                if (!tile.HasTile && Main.netMode == NetmodeID.MultiplayerClient)
-                {
-                    NetMessage.SendData(MessageID.TileManipulation, -1, -1, null, 0, i, j, 0f, 0, 0, 0);
+                    if (tile.TileFrameY == 22)
+                    {
+                        player.cursorItemIconID = ItemID.Starfish;
+                    }
+                    else if (tile.TileFrameY == 22 * 2)
+                    {
+                        player.cursorItemIconID = ItemID.LightningWhelkShell;
+                    }
+                    else if (tile.TileFrameY == 22 * 3)
+                    {
+                        player.cursorItemIconID = ItemID.TulipShell;
+                    }
+                    else if (tile.TileFrameY == 22 * 4)
+                    {
+                        player.cursorItemIconID = ItemID.JunoniaShell;
+                    }
+                    else player.cursorItemIconID = ItemID.Seashell;
                 }
             }
         }
 
         public override void PostDraw(int i, int j, int type, SpriteBatch spriteBatch)
         {
-            if (ModContent.GetInstance<Client>().HallowFireflies)
+            if (ModContent.GetInstance<Visuals>().HallowFireflies)
             {
                 Tile tile = Main.tile[i, j];
                 if (tile.HasTile && tile.TileType == TileID.Crystals && Main.rand.NextBool(50))
@@ -232,7 +233,7 @@ namespace WombatQOL
             bool wallBlock = !Main.wallLight[tile.WallType];
 
             #region tilelight
-            if (ModContent.GetInstance<Client>().GlowingHellstone)
+            if (ModContent.GetInstance<Visuals>().GlowingHellstone)
             {
                 if (tile.HasTile && (tile.TileType == TileID.Hellstone || tile.TileType == TileID.HellstoneBrick))
                 {
@@ -250,7 +251,7 @@ namespace WombatQOL
                     }
                 }
             }
-            if (!tileBlock && !wallBlock && ModContent.GetInstance<Client>().GlowingLavaBG)
+            if (!tileBlock && !wallBlock && ModContent.GetInstance<Visuals>().GlowingLavaBG)
             {
                 if (j > Main.maxTilesY - 300 && j <= Main.maxTilesY - 200)
                 {
@@ -266,7 +267,7 @@ namespace WombatQOL
         {
             Player player = Main.LocalPlayer;
 
-            if (player.ZoneJungle && ModContent.GetInstance<Client>().JungleFireflies)
+            if (player.ZoneJungle && ModContent.GetInstance<Visuals>().JungleFireflies)
             {
                 Tile tile = Main.tile[i, j];
                 if (j > Main.worldSurface && Main.rand.NextBool(5000) && !tile.HasTile && tile.LiquidAmount == 0 && !Main.wallHouse[tile.WallType] && tile.WallType != WallID.LihzahrdBrickUnsafe)

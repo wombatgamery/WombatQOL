@@ -120,6 +120,7 @@ Mods: {
 			muzzleflash.DisplayName: błysk wystrzału
 			nebulalaser.DisplayName: laser mgławicy
 			pinklaser.DisplayName: różowy laser
+			// yellowlaser.DisplayName: yellowlaser
 		}
 
 		Tiles: {
@@ -128,12 +129,12 @@ Mods: {
 		}
 
 		Configs: {
-			Client: {
-				DisplayName: Ustawienia Klienta
+			Worldgen: {
+				DisplayName: Pokolenie Świata
+
 				Headers: {
-					Worldgen: Generator Świata
-					Visuals: Efekty Wizualne
-					Lighting: Oświetlenie
+					Terrain: Teren
+					Structure: Struktury
 				}
 
 				LeafBushes: {
@@ -179,6 +180,147 @@ Mods: {
 
 						Uwaga: Nic nie robi przy włączonej modyfikacji "Remnants", ponieważ już posiada tą funkcję
 						'''
+				}
+
+				HellCages: {
+					Label: "[i:147] Piekielne Klatki"
+					Tooltip: W podziemiach pojawią się kolczaste wiszące klatki, dzięki którym przemierzanie będzie ciekawsze
+				}
+
+				DesertRocks: {
+					Label: "[i:3273] Filary Pustynne"
+					Tooltip: Na głównej Pustyni pojawią się filary z piaskowca, dzięki którym przemierzanie będzie ciekawsze
+				}
+
+				SpawnCampsite: {
+					Label: "[i:2434] Namiot w miejscu odrodzenia"
+					Tooltip: W miejscu odrodzenia będzie mały namiot dla Przewodnika
+				}
+
+				LushJungle: {
+					Label: "[i:746] Bujna Dżungla"
+					Tooltip:
+						'''
+						Trawa z dżungli zastąpi całe odsłonięte błoto w Dżungli na powierzchni, dodając więcej życia do środowiska
+
+						Uwaga: Nic nie robi przy włączonej modyfikacji "Remnants", ponieważ już posiada tą funkcję
+						'''
+				}
+
+				ChestItemShuffle: {
+					Label: "[i:48] Pomieszane Kufry"
+					Tooltip: Naturalnie wygenerowane kufry będą miały przetasowaną zawartość, aby uzyskać bardziej naturalny i opuszczony charakter
+				}
+
+				RandomOpenDoors: {
+					Label: "[i:25] Opuszczone Drzwi"
+					Tooltip: Naturalnie wygenerowane drzwi będą czasami pozostawiane otwarte, aby uzyskać bardziej naturalny i opuszczony charakter
+				}
+			}
+
+			Gameplay: {
+				DisplayName: Rozgrywka
+
+				Headers: {
+					Content: Zawartość
+					Crafting: Wytwarzanie
+					Drops: Dropy
+					// Lighting: Lighting
+					// Visuals: Visuals
+					Functional: Funkcjonalność
+				}
+
+				BossArtifacts: {
+					Label: "[i:WombatQOL/KingSlimeArtifact] Artefakty Bossów"
+					Tooltip:
+						'''
+						W trybie eksperckim lub wyższym bossowie będą upuszczać artefakty, z których można wytworzyć ich dropy. Pomaga wyeliminować powtarzające się grindowanie w przypadku konkretnego bossa
+						Każdy gracz otrzymuje jeden artefakt, a ilość potrzebna na dany przedmiot jest mianownikiem szansy na wypadnięcie tego przedmiotu
+
+						Uwaga: Bardzo polecane
+						'''
+				}
+
+				SafeCritters: {
+					Label: "[i:2019] Bezpieczne Stworzonka"
+					Tooltip: Stworzonka nie bedą otrzymywać obrażeń od potworów
+				}
+
+				SafeBoundNPCs: {
+					Label: "[i:985] Bezpieczni Związani NPC"
+					Tooltip: Związani NPC i Nieprzytomny nie otrzymają obrażeń od potworów, co zmniejsza presję związaną z próbą ich ratowania
+				}
+
+				TilePickup: {
+					Label: "[i:5] Lepsze Zbieractwo"
+					Tooltip: Większość roślin i przedmiotów można łatwo zebrać, klikając prawym przyciskiem myszy, co czyni zbieranie nieco wygodniejszym
+				}
+
+				DyeMixing: {
+					Label: "[i:1066] Mieszanie Kolorów"
+					Tooltip: Farby i barwniki o różnych kolorach można mieszać w kadzi do barwników, aby stworzyć nowe
+				}
+
+				EasyWings: {
+					Label: "[i:785] Pierzaste Skrzydła"
+					Tooltip: Usunięto Pióro gigantycznej harpii, a przepis na Skrzydła harpii wykorzystuje zamiast tego 50 normalnych piór
+				}
+
+				SpectrePaintUpgrade: {
+					Label: "[i:1543] Spectre Infusion"
+					Tooltip:
+						'''
+						Widmowe narzędzia do malowania są ulepszane bezpośrednio w stosunku do ich normalnych odpowiedników, co rekompensuje zmniejszonym kosztem Widmowych sztabek
+						Ma to na celu dodanie progresji, i jednocześnie poprawienie wytwarzania i zarządzania ekwipunkiem
+						'''
+				}
+
+				GlowingMushrooms: {
+					Label: "[i:183] Więcej Grzybów"
+					Tooltip:
+						'''
+						Wrogowie z Lśniacych grzybów upuszczą część swoich grzybów po zabiciu, dzięki czemu grindowanie w celu zdobycia Grzybielnicowej zbroi będzie nieco mniej nudne
+
+						Uwaga: Bardzo polecane
+						'''
+				}
+
+				SoulsOfFlight: {
+					Label: "[i:575] Duchowe Harpie"
+					Tooltip: Harpie mogą upuścić Duszę lotu, gdy zostaną zabite w trybie Hardmode dzięki czemu grindowanie w celu zdobycia skrzydeł będzie nieco mniej nudne
+				}
+
+				KingSlimeKatana: {
+					Label: "[i:2273] Katana Ninjy"
+					Tooltip: Po pokonaniu Król Szlamów upuści Katanę, co daje większą motywację do walki z nim we wczesnej fazie gry
+				}
+
+				ExoticGold: {
+					Label: "[i:WombatQOL/ExoticGold] Egzotyczne Złoto"
+					Tooltip:
+						'''
+						Egzotyczne złoto to nowy przedmiot który:
+						- Zastępuje Złoty pył w wytwarzaniu przedmiotów
+						- Wypada z piratów zamiast złotych mebli
+						- Służy do wytwarzania złotych mebli
+						Ma to na celu ładne powiązanie podobnych sobie przedmiotów przy jednoczesnym zmniejszeniu bałaganu w ekwipunku
+
+						Uwaga: Bardzo polecane
+						'''
+				}
+
+				HoneyDispenser: {
+					Label: "[i:2204] Obfity Miód"
+					Tooltip: Dozownik miodu będzie faktycznie liczony jako źródło miodu
+				}
+			}
+
+			Visuals: {
+				DisplayName: Wizualizacje
+
+				Headers: {
+					Effects: Ruchomości
+					Lighting: Oświetlenie
 				}
 
 				BulletFlashes: {
@@ -251,145 +393,9 @@ Mods: {
 						'''
 				}
 
-				HellCages: {
-					Label: "[i:147] Piekielne Klatki"
-					Tooltip: W podziemiach pojawią się kolczaste wiszące klatki, dzięki którym przemierzanie będzie ciekawsze
-				}
-
-				DesertRocks: {
-					Label: "[i:3273] Filary Pustynne"
-					Tooltip: Na głównej Pustyni pojawią się filary z piaskowca, dzięki którym przemierzanie będzie ciekawsze
-				}
-
 				GraniteEnemyGlow: {
 					Label: "[i:3086] Granitowa Energia"
 					Tooltip: Granitowi wrogowie będą emitować światło
-				}
-
-				SpawnCampsite: {
-					Label: "[i:2434] Namiot w miejscu odrodzenia"
-					Tooltip: W miejscu odrodzenia będzie mały namiot dla Przewodnika
-				}
-
-				LushJungle: {
-					Label: "[i:746] Bujna Dżungla"
-					Tooltip:
-						'''
-						Trawa z dżungli zastąpi całe odsłonięte błoto w Dżungli na powierzchni, dodając więcej życia do środowiska
-
-						Uwaga: Nic nie robi przy włączonej modyfikacji "Remnants", ponieważ już posiada tą funkcję
-						'''
-				}
-
-				ChestItemShuffle: {
-					Label: "[i:48] Pomieszane Kufry"
-					Tooltip: Naturalnie wygenerowane kufry będą miały przetasowaną zawartość, aby uzyskać bardziej naturalny i opuszczony charakter
-				}
-
-				RandomOpenDoors: {
-					Label: "[i:25] Opuszczone Drzwi"
-					Tooltip: Naturalnie wygenerowane drzwi będą czasami pozostawiane otwarte, aby uzyskać bardziej naturalny i opuszczony charakter
-				}
-			}
-
-			Server: {
-				DisplayName: Ustawienia Serwera
-
-				Headers: {
-					Content: Zawartość
-					Gameplay: Rozgrywka
-					Crafting: Wytwarzanie
-					Drops: Dropy
-				}
-
-				BossArtifacts: {
-					Label: Artefakty Bossów
-					Tooltip:
-						'''
-						W trybie eksperckim lub wyższym bossowie będą upuszczać artefakty, z których można wytworzyć ich dropy. Pomaga wyeliminować powtarzające się grindowanie w przypadku konkretnego bossa
-						Każdy gracz otrzymuje jeden artefakt, a ilość potrzebna na dany przedmiot jest mianownikiem szansy na wypadnięcie tego przedmiotu
-
-						Uwaga: Bardzo polecane
-						'''
-				}
-
-				SafeCritters: {
-					Label: "[i:2019] Bezpieczne Stworzonka"
-					Tooltip: Stworzonka nie bedą otrzymywać obrażeń od potworów
-				}
-
-				SafeBoundNPCs: {
-					Label: "[i:985] Bezpieczni Związani NPC"
-					Tooltip: Związani NPC i Nieprzytomny nie otrzymają obrażeń od potworów, co zmniejsza presję związaną z próbą ich ratowania
-				}
-
-				TilePickup: {
-					Label: "[i:5] Lepsze Zbieractwo"
-					Tooltip:
-						'''
-						Większość roślin i przedmiotów można łatwo zebrać, klikając prawym przyciskiem myszy, co czyni zbieranie nieco wygodniejszym
-						Zbieranie roślin do alchemii w ten sposób zresetuje ich wzrost, zamiast je niszczyć
-
-						Uwaga: Nie działa w trybie wieloosobowym
-						'''
-				}
-
-				DyeMixing: {
-					Label: "[i:1066] Mieszanie Kolorów"
-					Tooltip: Farby i barwniki o różnych kolorach można mieszać w kadzi do barwników, aby stworzyć nowe
-				}
-
-				EasyWings: {
-					Label: "[i:785] Pierzaste Skrzydła"
-					Tooltip: Usunięto Pióro gigantycznej harpii, a przepis na Skrzydła harpii wykorzystuje zamiast tego 50 normalnych piór
-				}
-
-				SpectrePaintUpgrade: {
-					Label: "[i:1543] Spectre Infusion"
-					Tooltip:
-						'''
-						Widmowe narzędzia do malowania są ulepszane bezpośrednio w stosunku do ich normalnych odpowiedników, co rekompensuje zmniejszonym kosztem Widmowych sztabek
-						Ma to na celu dodanie progresji, i jednocześnie poprawienie wytwarzania i zarządzania ekwipunkiem
-						'''
-				}
-
-				GlowingMushrooms: {
-					Label: "[i:183] Więcej Grzybów"
-					Tooltip:
-						'''
-						Wrogowie z Lśniacych grzybów upuszczą część swoich grzybów po zabiciu, dzięki czemu grindowanie w celu zdobycia Grzybielnicowej zbroi będzie nieco mniej nudne
-
-						Uwaga: Bardzo polecane
-						'''
-				}
-
-				SoulsOfFlight: {
-					Label: "[i:575] Duchowe Harpie"
-					Tooltip: Harpie mogą upuścić Duszę lotu, gdy zostaną zabite w trybie Hardmode dzięki czemu grindowanie w celu zdobycia skrzydeł będzie nieco mniej nudne
-				}
-
-				KingSlimeKatana: {
-					Label: "[i:2273] Katana Ninjy"
-					Tooltip: Po pokonaniu Król Szlamów upuści Katanę, co daje większą motywację do walki z nim we wczesnej fazie gry
-				}
-
-				ExoticGold: {
-					Label: Egzotyczne Złoto
-					Tooltip:
-						'''
-						Egzotyczne złoto to nowy przedmiot który:
-						- Zastępuje Złoty pył w wytwarzaniu przedmiotów
-						- Wypada z piratów zamiast złotych mebli
-						- Służy do wytwarzania złotych mebli
-						Ma to na celu ładne powiązanie podobnych sobie przedmiotów przy jednoczesnym zmniejszeniu bałaganu w ekwipunku
-
-						Uwaga: Bardzo polecane
-						'''
-				}
-
-				HoneyDispenser: {
-					Label: "[i:2204] Obfity Miód"
-					Tooltip: Dozownik miodu będzie faktycznie liczony jako źródło miodu
 				}
 			}
 		}

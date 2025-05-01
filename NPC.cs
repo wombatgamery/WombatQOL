@@ -18,11 +18,11 @@ namespace WombatQOL
 	{
 		public override void SetDefaults(NPC npc)
 		{
-			if (ModContent.GetInstance<Server>().SafeBoundNPCs && (npc.type == NPCID.BoundGoblin || npc.type == NPCID.BoundMechanic || npc.type == NPCID.BoundWizard || npc.type == NPCID.WebbedStylist || npc.type == NPCID.BartenderUnconscious))
+			if (ModContent.GetInstance<Gameplay>().SafeBoundNPCs && (npc.type == NPCID.BoundGoblin || npc.type == NPCID.BoundMechanic || npc.type == NPCID.BoundWizard || npc.type == NPCID.WebbedStylist || npc.type == NPCID.BartenderUnconscious))
 			{
 				npc.dontTakeDamageFromHostiles = true;
 			}
-			else if (ModContent.GetInstance<Server>().SafeCritters && npc.damage == 0 && npc.lifeMax <= 10 && npc.value == 0)
+			else if (ModContent.GetInstance<Gameplay>().SafeCritters && npc.damage == 0 && npc.lifeMax <= 10 && npc.value == 0)
 			{
 				npc.dontTakeDamageFromHostiles = true;
 			}
@@ -30,7 +30,7 @@ namespace WombatQOL
 
 		public override void PostAI(NPC npc)
 		{
-			if (ModContent.GetInstance<Client>().GraniteEnemyGlow)
+			if (ModContent.GetInstance<Visuals>().GraniteEnemyGlow)
 			{
 				if (npc.type == NPCID.GraniteGolem || npc.type == NPCID.GraniteFlyer)
 				{
@@ -52,7 +52,7 @@ namespace WombatQOL
 
         public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
 		{
-			if (ModContent.GetInstance<Server>().GlowingMushrooms)
+			if (ModContent.GetInstance<Gameplay>().GlowingMushrooms)
 			{
 				if (npc.type == NPCID.GiantFungiBulb)
 				{
@@ -70,25 +70,25 @@ namespace WombatQOL
 
 			if (npc.type == NPCID.Harpy)
 			{
-				if (ModContent.GetInstance<Server>().SoulsOfFlight)
+				if (ModContent.GetInstance<Gameplay>().SoulsOfFlight)
                 {
 					npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsHardmode(), ItemID.SoulofFlight, 2));
 				}
 			}
 
-			if (ModContent.GetInstance<Server>().EasyWings)
+			if (ModContent.GetInstance<Gameplay>().EasyWings)
 			{
 				npcLoot.RemoveWhere(rule => rule is CommonDrop drop && drop.itemId == ItemID.GiantHarpyFeather);
 				//npcLoot.RemoveWhere(rule => rule is CommonDrop drop && drop.itemId == ItemID.BoneFeather);
 				//npcLoot.RemoveWhere(rule => rule is Drop drop && drop.itemId == ItemID.SpookyTwig);
 			}
 
-			if (npc.type == NPCID.KingSlime && ModContent.GetInstance<Server>().KingSlimeKatana)
+			if (npc.type == NPCID.KingSlime && ModContent.GetInstance<Gameplay>().KingSlimeKatana)
 			{
 				npcLoot.Add(ItemDropRule.Common(ItemID.Katana));
 			}
 
-			if (NPCID.Sets.BelongsToInvasionPirate[npc.type] && ModContent.GetInstance<Server>().ExoticGold)
+			if (NPCID.Sets.BelongsToInvasionPirate[npc.type] && ModContent.GetInstance<Gameplay>().ExoticGold)
 			{
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<ExoticGold>(), npc.type == NPCID.PirateCaptain || npc.type == NPCID.PirateShip ? 1 : 4, npc.type == NPCID.PirateShip ? 10 : 1, npc.type == NPCID.PirateShip ? 10 : 1));
 
@@ -115,7 +115,7 @@ namespace WombatQOL
 			}
 
 
-			if (ModContent.GetInstance<Server>().BossArtifacts)
+			if (ModContent.GetInstance<Gameplay>().BossArtifacts)
             {
 				if (npc.type == NPCID.KingSlime)
 				{
@@ -154,7 +154,7 @@ namespace WombatQOL
 
         public override void ModifyShop(NPCShop shop)
         {
-            if (shop.NpcType == NPCID.Merchant && ModContent.GetInstance<Server>().ExoticGold)
+            if (shop.NpcType == NPCID.Merchant && ModContent.GetInstance<Gameplay>().ExoticGold)
             {
 				if (shop.TryGetEntry(ItemID.GoldDust, out NPCShop.Entry entry))
 				{

@@ -19,25 +19,25 @@ namespace WombatQOL
             bool calamity = ModLoader.TryGetMod("CalamityMod", out Mod cal);
             bool remnants = ModLoader.TryGetMod("Remnants", out Mod rem);
 
-            if (ModContent.GetInstance<Client>().DesertRocks)
+            if (ModContent.GetInstance<Worldgen>().DesertRocks)
             {
                 InsertPass(tasks, new DesertRocks("Desert Rocks", 1), FindIndex(tasks, "Full Desert") + 1);
             }
-            if (ModContent.GetInstance<Client>().LeafBushes)
+            if (ModContent.GetInstance<Worldgen>().LeafBushes)
             {
                 InsertPass(tasks, new Bushes("Bushes", 1), FindIndex(tasks, calamity ? "Planetoids" : "Final Cleanup"));
             }
-            if (ModContent.GetInstance<Client>().HellCages)
+            if (ModContent.GetInstance<Worldgen>().HellCages)
             {
                 InsertPass(tasks, new HellCages("Underworld Cages", 1), FindIndex(tasks, "Smooth World") + 1);
             }
-            if (ModContent.GetInstance<Client>().SpawnCampsite)
+            if (ModContent.GetInstance<Worldgen>().SpawnCampsite)
             {
                 InsertPass(tasks, new SpawnCampsite("Spawn Campsite", 1), FindIndex(tasks, "Spawn Point") + (remnants ? 2 : 1));
             }
             if (!remnants)
             {
-                if (ModContent.GetInstance<Client>().LushJungle)
+                if (ModContent.GetInstance<Worldgen>().LushJungle)
                 {
                     InsertPass(tasks, new LushJungle("Lush Jungle", 1), FindIndex(tasks, "Muds Walls In Jungle") + 1);
                 }
@@ -47,21 +47,21 @@ namespace WombatQOL
                 //    InsertPass(tasks, FindIndex(tasks, "Sand Patches") + 1, new SandCaves1("Sand Caves 1", 1));
                 //    InsertPass(tasks, FindIndex(tasks, "Jungle") + 1, new SandCaves2("Sand Caves 2", 1));
                 //}
-                if (ModContent.GetInstance<Client>().WaterClay)
+                if (ModContent.GetInstance<Worldgen>().WaterClay)
                 {
                     RemovePass(tasks, FindIndex(tasks, "Clay"));
                     InsertPass(tasks, new Clay("Clay", 1), FindIndex(tasks, "Planting Trees"));
                 }
 
-                if (ModContent.GetInstance<Client>().DungeonChains)
+                if (ModContent.GetInstance<Worldgen>().DungeonChains)
                 {
                     InsertPass(tasks, new DungeonChains("Dungeon Chains", 1), FindIndex(tasks, "Dungeon") + 1);
                 }
-                if (ModContent.GetInstance<Client>().DungeonStairs)
+                if (ModContent.GetInstance<Worldgen>().DungeonStairs)
                 {
                     InsertPass(tasks, new DungeonStairs("Dungeon Stairs", 1), FindIndex(tasks, "Dungeon") + 1);
                 }
-                if (ModContent.GetInstance<Client>().TempleStairs)
+                if (ModContent.GetInstance<Worldgen>().TempleStairs)
                 {
                     InsertPass(tasks, new TempleStairs("Temple Stairs", 1), FindIndex(tasks, "Jungle Temple") + 1);
                 }
@@ -97,7 +97,7 @@ namespace WombatQOL
 
         public override void PostWorldGen()
         {
-            if (ModContent.GetInstance<Client>().RandomOpenDoors)
+            if (ModContent.GetInstance<Worldgen>().RandomOpenDoors)
             {
                 for (int j = 40; j < Main.maxTilesY - 40; j++)
                 {
@@ -119,7 +119,7 @@ namespace WombatQOL
                     }
                 }
             }
-            if (ModContent.GetInstance<Client>().ChestItemShuffle)
+            if (ModContent.GetInstance<Worldgen>().ChestItemShuffle)
             {
                 for (int chestIndex = 0; chestIndex < Main.maxChests; chestIndex++)
                 {

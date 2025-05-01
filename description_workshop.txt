@@ -11,5 +11,6 @@ This mod adds a few new building blocks used by [url=https://steamcommunity.com/
 [h2]Credits[/h2] [img]https://i.imgur.com/jdunrUl.png[/img]
 Thanks to the following users for contributing directly to the mod: [list]
 [*]Russian localisation written by [url=https://steamcommunity.com/id/xenofite][b]Xenofite.[/b][/url]
+[*]Polish localisation written by [url=https://steamcommunity.com/id/nichiimishiari/][b]Nichiimishiari.[/b][/url]
 [/list]
 
