@@ -113,14 +113,14 @@ Mods: {
 		}
 
 		Projectiles: {
-			deathlaser.DisplayName: Луч смерти
-			eyelaser.DisplayName: Луч из глаз
-			greenlaser.DisplayName: Зелёный луч
-			martianlaser.DisplayName: Марсианский луч
+			deathlaser.DisplayName: Лазер смерти
+			eyelaser.DisplayName: Лазер из глаз
+			greenlaser.DisplayName: Зелёный лазер
+			martianlaser.DisplayName: Марсианский лазер
 			muzzleflash.DisplayName: Дульная вспышка
-			nebulalaser.DisplayName: Луч туманности
-			pinklaser.DisplayName: Розовый луч
-			// yellowlaser.DisplayName: yellowlaser
+			nebulalaser.DisplayName: Лазер туманности
+			pinklaser.DisplayName: Розовый лазер
+			yellowlaser.DisplayName: Жёлтый лазер
 		}
 
 		Tiles: {
@@ -221,16 +221,16 @@ Mods: {
 					Content: Новый контент
 					Crafting: Создание предметов
 					Drops: Выпадение предметов
-					// Lighting: Lighting
-					// Visuals: Visuals
-					Functional: Функциональность
+					Lighting: Освещение
+					Visuals: Визуальные эффекты
+					Functional: Функционал
 				}
 
 				BossArtifacts: {
-					Label: "[i:WombatQOL/KingSlimeArtifact]  Артефакты боссов"
+					Label: "[i:WombatQOL/KingSlimeArtifact] Артефакты боссов"
 					Tooltip:
 						'''
-						Начиная с режима Эксперта, с боссов будут выпадать артефакты, из которых можно создать любые предметы из их мешков с сокровищами
+						Начиная с режима эксперта, с боссов будут выпадать артефакты, из которых можно создать любые предметы из их мешков с сокровищами
 						На каждого игрока в мультиплеере выпадает по одному артефакту
 						Чем меньше шанс выпадения предмета с босса, тем больше артефактов потребуется для его создания
 						[c/98FB98:Крайне рекомендуется]
@@ -291,7 +291,7 @@ Mods: {
 					Tooltip:
 						'''
 						Добавляет диковинное золото — новый предмет, который:
-						• Выпадает с пиратов вместо золотой мебели, не давая вашему инвентарю заполняться кучей лишних предметов
+						• Выпадает с пиратов вместо золотой мебели, что уберегает ваш инвентарь от захламления кучей лишних предметов
 						• Используется для создания золотой мебели, что позволяет гарантированно получать нужную мебель
 						• Заменяет собой золотую пыль во всех рецептах с ней, вырезая из игры ненужный предмет
 						[c/98FB98:Крайне рекомендуется]
@@ -305,10 +305,10 @@ Mods: {
 			}
 
 			Visuals: {
-				DisplayName: Визуальный
+				DisplayName: Визуал
 
 				Headers: {
-					Effects: Эффекты
+					Effects: Спец. эффекты
 					Lighting: Освещение
 				}
 
