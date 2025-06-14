@@ -130,7 +130,7 @@ Mods: {
 
 		Configs: {
 			Worldgen: {
-				DisplayName: " World Generation"
+				DisplayName: World Generation
 
 				Headers: {
 					Terrain: Terrain
@@ -231,8 +231,6 @@ Mods: {
 					Content: Content
 					Crafting: Crafting
 					Drops: Drops
-					Lighting: Lighting
-					Visuals: Visuals
 					Functional: Functionality
 				}
 
