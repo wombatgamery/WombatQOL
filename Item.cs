@@ -10,32 +10,40 @@ namespace WombatQOL
 {
 	public class QOLItem : GlobalItem
 	{
-		//public override void HoldItem(Item item, Player player)
-		//{
-  //          if (ModContent.GetInstance<P2>().BulletCasings && player.itemAnimation == player.itemAnimationMax - 1 && !ModLoader.TryGetMod("TerrariaOverhaul", out Mod mod))
-  //          {
-  //              if (item.useAmmo == AmmoID.Bullet)
-  //              {
-  //                  int goreCount = 1;
-  //                  if (item.type == ItemID.Boomstick || item.type == ItemID.Shotgun)
-  //                  {
-  //                      goreCount = 3;
-  //                  }
-  //                  if (item.type == ItemID.TacticalShotgun)
-  //                  {
-  //                      goreCount = 6;
-  //                  }
+        public override void SetDefaults(Item entity)
+        {
+            if (entity.type == ItemID.Meteorite)
+			{
+				entity.rare = ItemRarityID.Blue;
+			}
+        }
 
-  //                  Vector2 mouseDistance = Main.MouseWorld - player.Center;
-  //                  Vector2 dustDirection = -mouseDistance.SafeNormalize(Vector2.UnitX);
-  //                  for (int i = 0; i < goreCount; i++)
-  //                  {
-  //                      Gore.NewGore(player.GetSource_ItemUse(item), player.Center - dustDirection * 10, dustDirection * 2 + player.velocity, ModContent.GoreType<bulletcasing>(), 1);
-  //                  }
-  //              }
-  //          }
-  //      }
-	}
+        //public override void HoldItem(Item item, Player player)
+        //{
+        //          if (ModContent.GetInstance<P2>().BulletCasings && player.itemAnimation == player.itemAnimationMax - 1 && !ModLoader.TryGetMod("TerrariaOverhaul", out Mod mod))
+        //          {
+        //              if (item.useAmmo == AmmoID.Bullet)
+        //              {
+        //                  int goreCount = 1;
+        //                  if (item.type == ItemID.Boomstick || item.type == ItemID.Shotgun)
+        //                  {
+        //                      goreCount = 3;
+        //                  }
+        //                  if (item.type == ItemID.TacticalShotgun)
+        //                  {
+        //                      goreCount = 6;
+        //                  }
+
+        //                  Vector2 mouseDistance = Main.MouseWorld - player.Center;
+        //                  Vector2 dustDirection = -mouseDistance.SafeNormalize(Vector2.UnitX);
+        //                  for (int i = 0; i < goreCount; i++)
+        //                  {
+        //                      Gore.NewGore(player.GetSource_ItemUse(item), player.Center - dustDirection * 10, dustDirection * 2 + player.velocity, ModContent.GoreType<bulletcasing>(), 1);
+        //                  }
+        //              }
+        //          }
+        //      }
+    }
 
 	public class BetterRecipes : ModSystem
 	{

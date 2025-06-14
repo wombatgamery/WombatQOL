@@ -186,7 +186,11 @@ Mods: {
 
 				DesertRocks: {
 					Label: "[i:3273] Столбы в пустыне"
-					Tooltip: В пустыне на поверхности будут генерироваться столбы из песчаника
+					Tooltip:
+						'''
+						В пустыне на поверхности будут генерироваться столбы из песчаника
+						[c/808080:Эта настройка не делает ничего, если включён мод Remnants]
+						'''
 				}
 
 				SpawnCampsite: {
@@ -301,6 +305,15 @@ Mods: {
 				HoneyDispenser: {
 					Label: "[i:2204] Изобилие мёда"
 					Tooltip: Медовый дозатор будет считаться за источник мёда для создания предметов
+				}
+
+				RareMeteorite: {
+					// Label: "[i:116] Rare Meteorite"
+					/* Tooltip:
+						'''
+						The rarity of raw meteorite is increased to blue, to match the bars crafted from it
+						This is mainly to prevent the item from burning in lava
+						''' */
 				}
 			}
 

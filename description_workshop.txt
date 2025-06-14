@@ -9,8 +9,9 @@ This mod is a collection of small, vanilla-consistent tweaks suited to any type 
 This mod adds a few new building blocks used by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2861542679][b]Remnants[/b][/url] in its world generation, so it naturally requires this mod to also be installed.
 
 [h2]Credits[/h2] [img]https://i.imgur.com/jdunrUl.png[/img]
-Thanks to the following users for contributing directly to the mod: [list]
-[*]Russian localisation written by [url=https://steamcommunity.com/id/xenofite][b]Xenofite.[/b][/url]
-[*]Polish localisation written by [url=https://steamcommunity.com/id/nichiimishiari/][b]Nichiimishiari.[/b][/url]
+Localisation: [list]
+[*]Russian localisation by [url=https://steamcommunity.com/id/xenofite][b]Xenofite.[/b][/url]
+[*]Polish localisation by [url=https://steamcommunity.com/id/nichiimishiari/][b]Nichiimishiari.[/b][/url]
+[*]German localisation by [url=https://steamcommunity.com/id/Cracky-XXX/][b]Cracky.[/b][/url]
 [/list]
 

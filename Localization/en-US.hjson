@@ -190,7 +190,12 @@ Mods: {
 
 				DesertRocks: {
 					Label: "[i:3273] Desert Pillars"
-					Tooltip: Sandstone pillars will generate in the main desert, making it more interesting to traverse
+					Tooltip:
+						'''
+						Sandstone pillars will generate in the main desert, making it more interesting to traverse
+
+						Note: Does nothing with Remnants or Calamity Fables enabled, as they work poorly with this feature
+						'''
 				}
 
 				SpawnCampsite: {
@@ -313,6 +318,15 @@ Mods: {
 				HoneyDispenser: {
 					Label: "[i:2204] Plentiful Honey"
 					Tooltip: The honey dispenser will actually count as a honey source
+				}
+
+				RareMeteorite: {
+					Label: "[i:116] Rare Meteorite"
+					Tooltip:
+						'''
+						The rarity of raw meteorite is increased to blue, to match the bars crafted from it
+						This is mainly to prevent the item from burning in lava
+						'''
 				}
 			}
 

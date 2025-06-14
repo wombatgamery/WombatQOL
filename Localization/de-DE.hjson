@@ -1,0 +1,425 @@
+Mods: {
+	WombatQOL: {
+		Items: {
+			concrete: {
+				DisplayName: Betonplatte
+				Tooltip: ""
+			}
+
+			concretewall: {
+				DisplayName: Betonwand
+				Tooltip: ""
+			}
+
+			IndustrialPipe: {
+				DisplayName: Industrielles Rohr
+				Tooltip: ""
+			}
+
+			electriclight: {
+				DisplayName: Elektrisches Licht
+				Tooltip: ""
+			}
+
+			electriclightfaulty: {
+				DisplayName: Fehlerhaftes Elektrisches Licht
+				Tooltip: ""
+			}
+
+			ExoticGold: {
+				DisplayName: Exotisches Gold
+				Tooltip: Obwohl es sich nicht viel von normalem Gold unterscheidet, geben ihm seine einzigartigen Eigenschaften besondere Anwendungsmöglichkeiten
+			}
+
+			honeybrick: {
+				DisplayName: Wabenziegel
+				Tooltip: ""
+			}
+
+			honeybrickwall: {
+				DisplayName: Wabenziegel-Wand
+				Tooltip: ""
+			}
+
+			IndustrialPanel: {
+				DisplayName: Industrielle Platte
+				Tooltip: ""
+			}
+
+			IndustrialPlatform: {
+				DisplayName: Industrielle Plattform
+				Tooltip: ""
+			}
+
+			IndustrialWall: {
+				DisplayName: Industrielle Wand
+				Tooltip: ""
+			}
+
+			CeremonialCandle: {
+				DisplayName: Zeremonielle Kerze
+				Tooltip: Formlose Kerzen, die durch Gebrauch zusammengeschmolzen sind
+			}
+
+			IndustrialSupport: {
+				DisplayName: Industrielle Stütze
+				Tooltip: ""
+			}
+
+			DukeFishronArtifact: {
+				DisplayName: Herzog Fischron Artefakt
+				Tooltip: Enthält ein kleines Fragment der Macht von Herzog Fischron
+			}
+
+			GolemArtifact: {
+				DisplayName: Golem-Artefakt
+				Tooltip: Enthält ein kleines Fragment der Macht des Golems
+			}
+
+			KingSlimeArtifact: {
+				DisplayName: König Schleim Artefakt
+				Tooltip: Enthält ein kleines Fragment der Macht des König Schleims
+			}
+
+			MoonLordArtifact: {
+				DisplayName: Mondlord-Artefakt
+				Tooltip: Enthält ein kleines Fragment der Macht des Mondlords
+			}
+
+			PlanteraArtifact: {
+				DisplayName: Plantera-Artefakt
+				Tooltip: Enthält ein kleines Fragment der Macht von Plantera
+			}
+
+			QueenBeeArtifact: {
+				DisplayName: Bienenkönigin-Artefakt
+				Tooltip: Enthält ein kleines Fragment der Macht der Bienenkönigin
+			}
+
+			SkeletronArtifact: {
+				DisplayName: Skeletron-Artefakt
+				Tooltip: Enthält ein kleines Fragment der Macht von Skeletron
+			}
+
+			WallOfFleshArtifact: {
+				DisplayName: Fleischwand-Artefakt
+				Tooltip: Enthält ein kleines Fragment der Macht der Fleischwand
+			}
+
+			IndustrialDoor: {
+				DisplayName: Industrielle Tür
+				Tooltip: ""
+			}
+		}
+
+		Projectiles: {
+			deathlaser.DisplayName: Todeslaser
+			eyelaser.DisplayName: Augenlaser
+			greenlaser.DisplayName: Grüner Laser
+			martianlaser.DisplayName: Marsianer-Laser
+			muzzleflash.DisplayName: Mündungsfeuer
+			nebulalaser.DisplayName: Nebula-Laser
+			pinklaser.DisplayName: Rosa Laser
+			yellowlaser.DisplayName: Gelber Laser
+		}
+
+		Tiles: {
+			electriclight.MapEntry: Elektrisches Licht
+			electriclightfaulty.MapEntry: Elektrisches Licht
+		}
+
+		Configs: {
+			Worldgen: {
+				DisplayName: " Weltgenerierung"
+
+				Headers: {
+					Terrain: Gelände
+					Structure: Strukturen
+				}
+
+				LeafBushes: {
+					Label: "[i:745] Blättrige Büsche"
+					Tooltip: Blattwände werden in Haufen auf allen Grasarten generiert und sorgen für mehr Leben und Tiefe in der Umgebung
+				}
+
+				WaterClay: {
+					Label: "[i:133] Ton im Wasser"
+					Tooltip:
+						'''
+						Ton wird unter Gewässern generiert, anstatt in zufälligen Adern, und gibt ihm einen einzigartigen Fundort
+
+						Hinweis: Wasserpflanzen werden am Spawnen gehindert, was dies stark von persönlichen Vorlieben abhängig macht
+						Hinweis: Hat keine Wirkung, wenn Remnants aktiviert ist, da es schlecht mit dieser Funktion zusammenarbeitet
+						'''
+				}
+
+				DungeonChains: {
+					Label: "[i:85] Verlies-Ketten"
+					Tooltip:
+						'''
+						Hängende Ketten werden an hohen Stellen im Verlies generiert, was es interessanter zu durchqueren macht
+
+						Hinweis: Hat keine Wirkung, wenn Remnants aktiviert ist, da es diese Funktion bereits enthält
+						'''
+				}
+
+				DungeonStairs: {
+					Label: "[i:1384] Verlies-Treppen"
+					Tooltip:
+						'''
+						Schräge Plattformen werden an geeigneten Stellen im Verlies generiert und geben ihm ein kohärenteres Design
+
+						Hinweis: Hat keine Wirkung, wenn Remnants aktiviert ist, da es diese Funktion bereits enthält
+						'''
+				}
+
+				TempleStairs: {
+					Label: "[i:3906] Tempel-Treppen"
+					Tooltip:
+						'''
+						Schräge Plattformen werden an geeigneten Stellen im Lihzahrd-Tempel generiert und geben ihm ein kohärenteres Design
+
+						Hinweis: Hat keine Wirkung, wenn Remnants aktiviert ist, da es diese Funktion bereits enthält
+						'''
+				}
+
+				HellCages: {
+					Label: "[i:147] Höllenkäfige"
+					Tooltip: Stachelige hängende Käfige werden in der Unterwelt generiert, was sie interessanter zu durchqueren macht
+				}
+
+				DesertRocks: {
+					Label: "[i:3273] Wüstensäulen"
+					Tooltip: Sandsteinsäulen werden in der Hauptwüste generiert, was sie interessanter zu durchqueren macht
+				}
+
+				SpawnCampsite: {
+					Label: "[i:2434] Spawn-Zelt"
+					Tooltip: Der Spawnpunkt wird ein kleines Zelt für den Führer beinhalten
+				}
+
+				LushJungle: {
+					Label: "[i:746] Üppiger Dschungel"
+					Tooltip:
+						'''
+						Dschungelgras ersetzt allen freiliegenden Schlamm im Oberflächendschungel und fügt der Umgebung mehr Leben hinzu
+
+						Hinweis: Hat keine Wirkung, wenn Remnants aktiviert ist, da es diese Funktion bereits enthält
+						'''
+				}
+
+				ChestItemShuffle: {
+					Label: "[i:48] Durcheinander in Truhen"
+					Tooltip: Natürlich generierte Truhen haben durcheinandergewürfelte Inventare für ein natürlicheres und verlasseneres Gefühl
+				}
+
+				RandomOpenDoors: {
+					Label: "[i:25] Verlassene Türen"
+					Tooltip: Natürlich generierte Türen stehen manchmal offen, für ein natürlicheres und verlasseneres Gefühl
+				}
+			}
+
+			Gameplay: {
+				DisplayName: Gameplay
+
+				Headers: {
+					Content: Inhalt
+					Crafting: Herstellung
+					Drops: Beute
+					Lighting: Beleuchtung
+					Visuals: Visuelles
+					Functional: Funktionalität
+				}
+
+				BossArtifacts: {
+					Label: "[i:WombatQOL/KingSlimeArtifact] Boss-Artefakte"
+					Tooltip:
+						'''
+						Im Experten-Modus oder höher lassen Bosse Artefakte fallen, die zu ihren Beutestücken gecraftet werden können, was hilft, wiederholtes Grinding für einen bestimmten Boss zu eliminieren
+						Pro Spieler wird ein Artefakt fallengelassen, und die benötigte Menge für einen bestimmten Gegenstand ist der Nenner der Dropchance dieses Gegenstands
+
+						Hinweis: Dringend empfohlen
+						'''
+				}
+
+				SafeCritters: {
+					Label: "[i:2019] Sichere Kleintiere"
+					Tooltip: Kleintiere nehmen keinen Schaden von Monstern
+				}
+
+				SafeBoundNPCs: {
+					Label: "[i:985] Sichere gebundene NPCs"
+					Tooltip: Gebundene NPCs und bewusstlose Männer nehmen keinen Schaden von Monstern, was den Druck bei der Rettung verringert
+				}
+
+				TilePickup: {
+					Label: "[i:5] Besseres Sammeln"
+					Tooltip: Die meisten Pflanzen und Regalitems können leicht mit Rechtsklick gesammelt werden, was das Sammeln etwas bequemer macht
+				}
+
+				DyeMixing: {
+					Label: "[i:1066] Farbmischung"
+					Tooltip: Farbe und Färbemittel verschiedener Farben können an einem Färbebottich gemischt werden, um neue zu erstellen
+				}
+
+				EasyWings: {
+					Label: "[i:785] Gefiederte Flügel"
+					Tooltip: Die Riesenharpyienfeder wird entfernt, und das Harpyienflügel-Rezept verwendet stattdessen 50 normale Federn
+				}
+
+				SpectrePaintUpgrade: {
+					Label: "[i:1543] Spektral-Infusion"
+					Tooltip:
+						'''
+						Spektralfarb-Werkzeuge werden direkt aus ihren normalen Gegenstücken aufgewertet, mit reduzierten Spektralbarrenkosten zum Ausgleich
+						Dies zielt darauf ab, etwas Progression hinzuzufügen und gleichzeitig das Inventar und Crafting-Menü zu entlasten
+						'''
+				}
+
+				GlowingMushrooms: {
+					Label: "[i:183] Ersatzpilze"
+					Tooltip:
+						'''
+						Leuchtpilzgegner lassen beim Tod einige ihrer Pilze fallen, was den Grind für Shroomit-Rüstung etwas weniger langweilig macht
+
+						Hinweis: Dringend empfohlen
+						'''
+				}
+
+				SoulsOfFlight: {
+					Label: "[i:575] Spirituelle Harpyien"
+					Tooltip: Harpyien können im Hardmode beim Töten eine Seele des Fluges fallen lassen, was den Grind für Flügel etwas interessanter macht
+				}
+
+				KingSlimeKatana: {
+					Label: "[i:2273] Katana des Ninjas"
+					Tooltip: König Schleim lässt ein nützliches Katana fallen, wenn er besiegt wird, was mehr Anreiz gibt, ihn im frühen Spiel zu bekämpfen
+				}
+
+				ExoticGold: {
+					Label: "[i:WombatQOL/ExoticGold] Exotisches Gold"
+					Tooltip:
+						'''
+						Exotisches Gold ist ein neuer Gegenstand, der:
+						- Goldstaub in seinen Crafting-Rezepten ersetzt
+						- Von Piraten anstelle von goldenen Möbeln fallengelassen wird
+						- Zum Craften von goldenen Möbeln verwendet wird
+						Dies zielt darauf ab, einige ähnliche Inhalte schön zu verbinden und gleichzeitig das Inventar zu entlasten
+
+						Hinweis: Dringend empfohlen
+						'''
+				}
+
+				HoneyDispenser: {
+					Label: "[i:2204] Reichlich Honig"
+					Tooltip: Der Honigspender zählt tatsächlich als Honigquelle
+				}
+
+				RareMeteorite: {
+					// Label: "[i:116] Rare Meteorite"
+					/* Tooltip:
+						'''
+						The rarity of raw meteorite is increased to blue, to match the bars crafted from it
+						This is mainly to prevent the item from burning in lava
+						''' */
+				}
+			}
+
+			Visuals: {
+				DisplayName: Visuelles
+
+				Headers: {
+					Effects: Effekte
+					Lighting: Beleuchtung
+				}
+
+				BulletFlashes: {
+					Label: "[i:164] Kugel-Mündungsfeuer"
+					Tooltip:
+						'''
+						Kugelgeschosse erhalten einen Feuereffekt, um sie visuell ansprechender zu machen
+
+						Hinweis: Hat keine Wirkung, wenn Terraria Overhaul aktiviert ist, da es diese Funktion bereits enthält
+						'''
+				}
+
+				LaserFlashes: {
+					Label: "[i:127] Laser-Mündungsfeuer"
+					Tooltip: Lasergeschosse erhalten einen Feuereffekt, um sie visuell ansprechender zu machen
+				}
+
+				BulletCasings: {
+					Label: "[i:1432] Patronenhülsen"
+					Tooltip:
+						'''
+						Gewehre werfen beim Abfeuern Patronenhülsen aus und fügen dem Fernkampf etwas Immersion hinzu
+
+						Hinweis: Hat keine Wirkung, wenn Terraria Overhaul aktiviert ist, da es diese Funktion bereits enthält
+						'''
+				}
+
+				JungleFireflies: {
+					Label: "[i:1992] Dschungel-Glühwürmchen"
+					Tooltip: Kleine Glühwürmchen werden im unterirdischen Dschungel umherstreifen und die Atmosphäre beleben
+				}
+
+				HallowFireflies: {
+					Label: "[i:2004] Heiliges-Glühwürmchen"
+					Tooltip: Kleine Glühwürmchen werden im unterirdischen Heiligen umherstreifen und die Atmosphäre beleben
+				}
+
+				VileWater: {
+					Label: "[i:3210] Übles Wasser"
+					Tooltip: Verderbniswasser wird zu einem kränklichen Grün, fügt Farbvariation hinzu und reduziert Monotonie
+				}
+
+				Screenshake: {
+					Label: "[i:2701] Bildschirmwackeln"
+					Tooltip:
+						'''
+						Explosionen verursachen Bildschirmwackeln, wobei die Intensität von der Entfernung und ungefähren Stärke abhängt
+
+						Hinweis: Gilt nicht für modifizierte Inhalte, was Inkonsistenzen mit Vanilla-Inhalten schafft
+						'''
+				}
+
+				SnowDirtMerge: {
+					Label: "[i:593] Schnee- und Erd-Verschmelzung"
+					Tooltip: Aktiviert die ungenutzten Erd-Verschmelzungstexturen für Schneeblöcke
+				}
+
+				GlowingHellstone: {
+					Label: "[i:174] Warmer Höllensteinerz"
+					Tooltip: Höllensteinerz, seine Ziegel und natürliche Lavawände haben einen weichen roten Schein
+				}
+
+				GlowingLavaBG: {
+					Label: "[i:4535] Warmer Lava-Hintergrund"
+					Tooltip:
+						'''
+						Der Lava-Hintergrund in der Nähe der Unterwelt (vorausgesetzt, Hintergründe sind eingeschaltet) hat einen weichen roten Schein
+
+						Hinweis: Betrifft Subwelten, was in einigen Fällen negativ sein kann
+						'''
+				}
+
+				GraniteEnemyGlow: {
+					Label: "[i:3086] Granit-Energie"
+					Tooltip: Granitgegner strahlen Licht aus
+				}
+			}
+		}
+
+		Biomes: {
+			CorruptionWater: {
+				DisplayName: Verderbnis-Wasser
+				TownNPCDialogueName: das Verderbnis-Wasser
+			}
+
+			Shimmer: {
+				DisplayName: Schimmer
+				TownNPCDialogueName: den Schimmer
+			}
+		}
+	}
+}

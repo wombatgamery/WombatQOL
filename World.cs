@@ -17,12 +17,9 @@ namespace WombatQOL
         public override void ModifyWorldGenTasks(List<GenPass> tasks, ref double totalWeight)
         {
             bool calamity = ModLoader.TryGetMod("CalamityMod", out Mod cal);
+            bool fables = ModLoader.TryGetMod("CalamityFables", out Mod cal2);
             bool remnants = ModLoader.TryGetMod("Remnants", out Mod rem);
 
-            if (ModContent.GetInstance<Worldgen>().DesertRocks)
-            {
-                InsertPass(tasks, new DesertRocks("Desert Rocks", 1), FindIndex(tasks, "Full Desert") + 1);
-            }
             if (ModContent.GetInstance<Worldgen>().LeafBushes)
             {
                 InsertPass(tasks, new Bushes("Bushes", 1), FindIndex(tasks, calamity ? "Planetoids" : "Final Cleanup"));
@@ -37,6 +34,10 @@ namespace WombatQOL
             }
             if (!remnants)
             {
+                if (ModContent.GetInstance<Worldgen>().DesertRocks && !fables)
+                {
+                    InsertPass(tasks, new DesertRocks("Desert Rocks", 1), FindIndex(tasks, "Full Desert") + 1);
+                }
                 if (ModContent.GetInstance<Worldgen>().LushJungle)
                 {
                     InsertPass(tasks, new LushJungle("Lush Jungle", 1), FindIndex(tasks, "Muds Walls In Jungle") + 1);

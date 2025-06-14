@@ -313,6 +313,15 @@ Mods: {
 					Label: "[i:2204] Obfity Miód"
 					Tooltip: Dozownik miodu będzie faktycznie liczony jako źródło miodu
 				}
+
+				RareMeteorite: {
+					// Label: "[i:116] Rare Meteorite"
+					/* Tooltip:
+						'''
+						The rarity of raw meteorite is increased to blue, to match the bars crafted from it
+						This is mainly to prevent the item from burning in lava
+						''' */
+				}
 			}
 
 			Visuals: {

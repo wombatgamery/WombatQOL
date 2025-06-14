@@ -14,7 +14,8 @@ namespace WombatQOL
 		public bool LeafBushes;
 
 		[DefaultValue(true)]
-		public bool DesertRocks;
+        [BackgroundColor(100, 100, 150)]
+        public bool DesertRocks;
 
         //[Label("Better Spider Caves")]
         //[DefaultValue(true)]
@@ -91,16 +92,22 @@ namespace WombatQOL
 		[Header("Functional")]
 
 		[DefaultValue(true)]
-		public bool SafeCritters;
+        [ReloadRequired]
+        public bool SafeCritters;
 
 		[DefaultValue(true)]
-		public bool SafeBoundNPCs;
+        [ReloadRequired]
+        public bool SafeBoundNPCs;
 
 		[DefaultValue(true)]
         [ReloadRequired]
         public bool TilePickup;
 
-		[Header("Crafting")]
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool RareMeteorite;
+
+        [Header("Crafting")]
 
 		[DefaultValue(true)]
         [ReloadRequired]
