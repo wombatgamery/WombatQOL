@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WombatQOL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9eb5231276a5059e1beb61e3226d59a3f7309de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3299e1a8ccbaed82cb989553d41f316a2c547452")]
 [assembly: System.Reflection.AssemblyProductAttribute("WombatQOL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WombatQOL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,7 +9,8 @@
 Помимо различных QoL-фич и прочих мелких изменений, этот мод также добавляет несколько блоков для строительства, которые задействованы в генерации структур из мода [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2861542679][b]Remnants[/b][/url]. Поэтому, разумеется, этот мод необходим для скачивания при игре с ним.
 
 [h2]Благодарности[/h2] [img]https://i.imgur.com/jdunrUl.png[/img]
-Отдаём должное следующим пользователям, как-либо оказавшим поддержку в разработке этого проекта: [list]
-[*][url=https://steamcommunity.com/id/xenofite][b]Xenofite[/b][/url] за создание русской локализации мода
+Выражаем безмерную благодарность следующим пользователям за их вклад в разработку этого мода: [list]
+[*][url=https://steamcommunity.com/id/xenofite][b]Xenofite[/b][/url] из [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3479684937][b]Nana team[/b][/url] за создание русской локализации мода
 [*][url=https://steamcommunity.com/id/nichiimishiari][b]Nichiimishiari[/b][/url] за создание польской локализации мода
+[*][url=https://steamcommunity.com/id/Cracky-XXX/][b]Cracky[/b][/url] за создание немецкой локализации мода
 [/list]

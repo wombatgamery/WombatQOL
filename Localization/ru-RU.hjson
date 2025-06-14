@@ -321,7 +321,7 @@ Mods: {
 				DisplayName: Визуал
 
 				Headers: {
-					Effects: Спец. эффекты
+					Effects: Спецэффекты
 					Lighting: Освещение
 				}
 
